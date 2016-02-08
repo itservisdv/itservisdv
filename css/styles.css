@@ -1,0 +1,46 @@
+html,body{margin:0px; padding:0px; height:100%;}
+body{overflow:hidden; position:relative;}
+#menu{position:fixed; z-index: 2; clear:both;  }
+#menu a{margin: 10px;}
+#container{position:relative; left:0; width:10000px; top:0; height:100%;}
+#c1,#c2,#c3,#c4,#c5,#c6 {width:1600px; height:100%; float:left; margin-right:100px;}
+#c1,#c3,#c5 {background: #ffffff url(http://pcvector.net/templates/pcv/images/bg_grid.png);}
+#c2,#c4,#c6 {background:#ffffff url(http://pcvector.net/templates/pcv/images/bg_grid.png);}
+.content{padding:80px 600px 20px 30px; }
+
+
+h2{margin: 0;}
+.left_tags{
+	width: 9px;
+    height: 27px;
+    line-height: 25px;
+    display: inline-block;
+    float: left;
+    background: url(../images/tags_left.png) no-repeat;
+}
+
+.midle_tags{
+	height: 25px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 0px 12px 0px 14px !important;
+    float: left;
+    background: url(../images/tags_middle.png) repeat-x; 
+}
+
+.right_tags{
+	width: 11px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    float: left;
+    background: url(../images/midle_right.png) repeat-x;
+
+}
+
+.tag{	
+    margin-bottom: 2px;
+    display: inline-block;
+    color: #DDD;	
+    font-size: 12px;
+}

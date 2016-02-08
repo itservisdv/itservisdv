@@ -1,93 +1,102 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Горизонтальная постраничная анимация по ID | pcvector.ru</title>
-<style type="text/css">
-<!--
-html,body{margin:0px; padding:0px; height:100%;}
-body{overflow:hidden; position:relative;}
-#menu{position:fixed; z-index: 2; top:10px; left:10px; clear:both; border:1px solid #666; padding:5px; background:#fff;}
-#menu a{margin-left:5px; margin-right:5px;}
-#container{position:relative; left:0; width:10000px; top:0; height:100%;}
-#c1,#c2,#c3,#c4,#c5,#c6 {width:1600px; height:100%; float:left; margin-right:100px;}
-#c1,#c3,#c5 {background: #ffffff url(http://pcvector.net/templates/pcv/images/bg_grid.png);}
-#c2,#c4,#c6 {background:#B5E0FE;}
-.content{padding:80px 600px 20px 30px; }
--->
-</style>
-<link rel="shortcut icon" href="/favicon.ico" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>codingnet.ru</title>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Сергей Иванов">
+	<meta name="copyright" lang="ru" content="CODINGNET.RU | 2014-2015" />
+	<meta name ="description" content ="Сайт посвещён разработке интернет-сайтов, их модернизации и продвижении">
+	<meta name ="keywords" content ="Разработка сайта, модернизация сайта, продвижение сайта">
+	<meta name="robots" content="index,follow" />	
+	<!-- FONTS-->	
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<!-- CSS-->			
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />	
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 </head>
 <body>
 
 <div id="menu">
-      <a href="#" onClick="Animate2id('#c1'); return false" title="Перейти к содержанию 1-ого элемента. Тип easing: default">Контент 1</a>
-      <a href="#" onClick="Animate2id('#c2','easeInOutExpo'); return false" title="Перейти к содержанию 2-ого элемента.Тип easing: easeInOutExpo">Контент 2</a>
-      <a href="#" onClick="Animate2id('#c3','easeOutQuint'); return false" title="Перейти к содержанию 3-ого элемента. Тип easing: easeOutQuint">Контент 3</a>
-      <a href="#" onClick="Animate2id('#c4','easeOutElastic'); return false" title="Перейти к содержанию 4-ого элемента. Тип easing type: easeOutElastic">Контент 4</a>
-      <a href="#" onClick="Animate2id('#c5','easeOutBack'); return false" title="Перейти к содержанию 5-ого элемента. Тип easing type: easeOutBack">Контент 5</a>
-      <a href="#" onClick="Animate2id('#c6','easeOutBounce'); return false" title="Перейти к содержанию 6-ого элемента. Тип easing type: easeOutBounce">Контент 6</a>
+	  <a href="#" onClick="Animate2id('#c1); return false" title="Перейти к содержанию 1-ого элемента. Тип easing: default">СТУДИЯ</a>
+      <a href="#" onClick="Animate2id('#c2'); return false" title="Перейти к содержанию 1-ого элемента. Тип easing: default">СИСТЕМА</a>
+      <a href="#" onClick="Animate2id('#c3','easeInOutExpo'); return false" title="Перейти к содержанию 2-ого элемента.Тип easing: easeInOutExpo">ПОЧЕМУ МЫ?</a>
+      <a href="#" onClick="Animate2id('#c4','easeOutQuint'); return false" title="Перейти к содержанию 3-ого элемента. Тип easing: easeOutQuint">ЦЕНЫ</a>
+      <a href="#" onClick="Animate2id('#c5','easeOutElastic'); return false" title="Перейти к содержанию 4-ого элемента. Тип easing type: easeOutElastic">ПРИМЕРЫ НАШИХ РАБОТ</a>
+      <a href="#" onClick="Animate2id('#c6','easeOutBack'); return false" title="Перейти к содержанию 5-ого элемента. Тип easing type: easeOutBack">КОНТАКТЫ</a>
+      <a href="#" onClick="Animate2id('#c7','easeOutBounce'); return false" title="Перейти к содержанию 6-ого элемента. Тип easing type: easeOutBounce">БЛОГ</a>
 </div>
 
 <div id="container">
-<div id="c1">
-	<div class="content">Стивен Пол Джобс, более известный как Стив Джобс (англ. Steven Paul Jobs, Steve Jobs; род. 24 февраля 1955) — американский инженер и предприниматель, сооснователь и генеральный директор американской корпорации Apple Inc. Джобс также является основателем и бывшим генеральным директором студии Pixar.
-	<br />
-	<div align="center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/225px-Steve_Jobs_Headshot_2010-CROP.jpg"  alt="Стив Джобс"/></div>
-	<br/>
-В конце 1970-х годов Джобс с соучредителем компании Apple Стивом Возняком создали один из первых коммерчески успешных персональных компьютеров. В начале 1980-х годов Джобс был в числе первых людей, обративших внимание на коммерческий потенциал компьютерной мыши при использовании её в графическом интерфейсе пользователя.
-
-Потеряв власть в борьбе с советом директоров в 1985 году, Джобс ушёл из Apple и основал компьютерную компанию NeXT, которая специализировалась на рынках бизнеса и высшего образования (пыталась продавать компьютеры образовательным учреждениям). В 1997 году Стив Джобс вернулся в Apple, став временным исполнительным директором и объединил её с компанией NeXT. В журнале «Fortune» Стив Джобс был назван самым влиятельным предпринимателем 2007 год и попал в список топ-менеджеров 2009 года.
-
-В 1986 г. Стив купил у Lucasfilm студию The Graphics Group, позже переименованную в Pixar. Он являлся её генеральным директором и основным акционером до приобретения «Уолтом Диснеем» в 2006 году. По состоянию на 2011 год, Джобс являлся членом совета директоров The Walt Disney Company.</div>
-</div>
-<div id="c2">
-	<div class="content">Ли́нус Бенедикт То́рвальдс, или Турвальдс (швед. Linus Benedict Torvalds [ˈliːnɵs ˈtuːrvalds]; 28 декабря 1969, Хельсинки, Финляндия) — финский программист, хакер.
-
-Воодушевлённый прочтением книги Эндрю Таненбаума, посвящённой операционной системе Minix, Линус создал Linux — ядро операционной системы GNU/Linux, являющейся на данный момент самой распространённой из свободных операционных систем.
-
-С 1997 по 2003 год Линус работал в фирме Трансмета. После этого организовал Open Source Development Labs. В данный момент он работает в Linux Foundation (с 2007), где занимается разработкой ядра Linux.
-<br />
-<div align="center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Linus_Torvalds.jpeg/200px-Linus_Torvalds.jpeg" alt="Линус Торвальдс"/></div>
-</div>
-</div>
-<div id="c3">
-	<div class="content">
-	Уи́льям Ге́нри Гейтс III (англ. William Henry Gates III; 28 октября 1955, Сиэтл), более известный как просто Билл Гейтс (англ. Bill Gates) — американский предприниматель, один из создателей (совместно с Полом Алленом) и крупнейший акционер компании Microsoft. До июня 2008 года являлся руководителем компании, после ухода с поста остался в должности её неисполнительного председателя совета директоров. Также является сопредседателем благотворительного Фонда Билла и Мелинды Гейтс.
-
-В период с 1996 по 2007 год и в 2009 году — самый богатый человек планеты по версии журнала Forbes. Его состояние в сентябре 2009 года оценивалось в 50 млрд долларов, уменьшившись на 7 млрд долларов по отношению к тому же месяцу прошлого года из-за мирового финансового кризиса.
-	<br />
-<div align="center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bill_Gates_World_Economic_Forum_2007.jpg/200px-Bill_Gates_World_Economic_Forum_2007.jpg" alt="Билл Гейтс"/></div>
- <br />
-Билл Гейтс является одним из рекордсменов по размеру средств, переданных на благотворительность: в период с 1994 по 2010 г. он вложил в Фонд Билла и Мелинды Гейтс более $28 млрд. В феврале 2010 года Гейтс выступил с предложением ко всем миллиардерам о передаче половины их состояния на благотворительную деятельность.
+	<div id="c1">
+		<div class="content">
+		<div class="tag">
+			<span class="left_tags"></span>
+			<h2 class="midle_tags">СТУДИЯ</h2>
+			<span class="right_tags"></span>	
+		</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aut similique excepturi quod animi harum! Illo non esse minus maiores itaque asperiores molestiae rerum consequuntur, neque et sapiente modi, suscipit.</p>			
+		</div>
+	</div>
+	<div id="c2">
+		<div class="content">
+		<div class="tag">
+			<span class="left_tags"></span>
+			<h2 class="midle_tags">СИСТЕМА</h2>
+			<span class="right_tags"></span>	
+		</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aut similique excepturi quod animi harum! Illo non esse minus maiores itaque asperiores molestiae rerum consequuntur, neque et sapiente modi, suscipit.</p>			
+		</div>
+	</div>
+	<div id="c3">
+		<div class="content">
+		<div class="tag">
+			<span class="left_tags"></span>
+			<h2 class="midle_tags">ПОЧЕМУ МЫ?</h2>
+			<span class="right_tags"></span>	
+		</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aut similique excepturi quod animi harum! Illo non esse minus maiores itaque asperiores molestiae rerum consequuntur, neque et sapiente modi, suscipit.</p>			
+		</div>
+	</div>
+	<div id="c4">
+		<div class="content">
+		<div class="tag">
+			<span class="left_tags"></span>
+			<h2 class="midle_tags">ЦЕНЫ</h2>
+			<span class="right_tags"></span>	
+		</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aut similique excepturi quod animi harum! Illo non esse minus maiores itaque asperiores molestiae rerum consequuntur, neque et sapiente modi, suscipit.</p>			
+		</div>
+	</div>
+	<div id="c5">
+		<div class="content">
+		<div class="tag">
+			<span class="left_tags"></span>
+			<h2 class="midle_tags">КОНТАКТЫ</h2>
+			<span class="right_tags"></span>	
+		</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aut similique excepturi quod animi harum! Illo non esse minus maiores itaque asperiores molestiae rerum consequuntur, neque et sapiente modi, suscipit.</p>			
+		</div>
+	</div>
+	<div id="c6">
+		<div class="content">
+		<div class="tag">
+			<span class="left_tags"></span>
+			<h2 class="midle_tags">БЛОГ</h2>
+			<span class="right_tags"></span>	
+		</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aut similique excepturi quod animi harum! Illo non esse minus maiores itaque asperiores molestiae rerum consequuntur, neque et sapiente modi, suscipit.</p>			
+		</div>
 	</div>
 </div>
-<div id="c4">
-	<div class="content">Го́рдон Эрл Му́р (англ. Gordon Earle Moore; 3 января 1929, Сан-Франциско, Калифорния) — почётный председатель совета директоров и основатель корпорации Intel, основоположник «закона Мура».
-		<br />
-<div align="center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Gordon_Moore.jpg/200px-Gordon_Moore.jpg" alt="Гордон Мур"/></div>
- <br />
-С 1953 года работал в лаборатории прикладной физики в Johns Hopkins University. С 1956 г. работал в Shockley Semiconductor Laboratory в Пало Альто, Калифорния, под руководством Вильяма Шокли(William Shockley).
- <br />
-В сентябре 1957 года Мур уходит из Shockley Semiconductor Laboratory и основывают собственную компанию Fairchild Semiconductor для работы с кремниевыми транзисторами в Mountain View , Калифорния.
- <br />
-В июле 1968 года Мур с Робертом Нойсом уходят из Fairchild Semiconductors и становятся основателями корпорации Intel. Первое время Мур занимал должность исполнительного вице-президента. В 1975 году он был назначен президентом и главным исполнительным директором Intel. Эти посты он занимал до апреля 1979 года, когда его избрали председателем совета директоров и главным исполнительным директором корпорации. Гордон Мур оставался в должности главного исполнительного директора корпорации до 1987 года, а в 1997 году в связи с достижением пенсионного возраста ему было присвоено звание почётного председателя совета директоров.
- <br />
-19 апреля 1965 года вывел и опубликовал так называемый «закон Мура», согласно которому количество транзисторов в кристалле микропроцессора удваивается каждые два года. В 1995 году он изменил временную составляющую закона и заявил об удвоении количества транзисторов каждые два года. Изначально выведенный как эмпирическое правило, закон Мура со временем стал основополагающим принципом полупроводниковой отрасли, определяющим создание всё более мощных полупроводниковых микросхем со всё более низкой себестоимостью.
-	</div>
-</div>
-<div id="c5">
-	<div class="content">Брюс Уи́ллис, урождённый Уо́лтер Брюс Уи́ллис (англ. Walter Bruce Willis, род. 19 марта 1955, Идар-Оберштайн, ФРГ) — американский киноактёр, продюсер, музыкант. Один из самых высокооплачиваемых актёров Голливуда. Наибольшую известность получил за роли в таких фильмах как «Крепкий орешек» (1988), «Криминальное чтиво» (1994), «Пятый элемент» (1997), «Армагеддон» (1998), «Шестое чувство» (1999), «Город грехов» (2005).
-	<br />
-<div align="center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Bruce_Willis_by_Gage_Skidmore.jpg/200px-Bruce_Willis_by_Gage_Skidmore.jpg" alt="Брюс Уиллис"/></div>	
-	</div>
-</div>
-<div id="c6">
-	<div class="content">Контент 6</div>
-</div>
-</div>
+
+
+
+
+
+
+
 
 <script>
 function Animate2id(id,ease){ //the id to animate, the easing type
