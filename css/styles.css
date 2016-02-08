@@ -1,0 +1,398 @@
+/*
+Theme Name: codingnet.ru
+Theme URI: http://codingnet.ru;
+Description: Файл стилей для сайта codingnet.ru
+Author: Сергей Иванов
+Author URI: 
+Template: codingnet.ru
+Version: 1.0
+*/
+
+
+
+
+
+/* IMPORTS ------------------------------------------------------------*/
+
+@import url('reset.css');
+
+/* GENERAL ------------------------------------------------------------*/
+
+.clear{
+	clear:both;	
+}
+
+a{text-decoration: none; border-bottom: none}
+p{margin:5px 0;}
+
+
+
+html,				
+body {
+	background: #000;
+	background: url(../images/bg.png);
+	background-attachment: fixed;	
+    font-size: 15px;
+    line-height: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+   	
+}
+
+/* WRAPPER ------------------------------------------------------------*/
+#wrapper{
+	width: 1000px;	
+	margin: 0 auto;
+	box-shadow: 0 0 5px rgba(0,0,0,0.8), 0 0 100px rgba(255,255,255,0.3);
+	min-height: 500px;
+	
+	
+}
+
+
+
+
+/* HEADER ------------------------------------------------------------*/
+header{
+	height: 200px;
+	
+}
+
+#header_top{
+	height: 30px;
+	background: url(../images/header.png);
+	border-bottom: 2px solid #000;	
+}
+
+#header_box{
+	height: 130px;
+	border-top: 1px solid #444444;
+	background: url(../images/header.png);
+	border-bottom: 2px solid #000;	
+}
+
+#logo{
+	width: 270px;
+	height: 125px;	
+	float: left;
+	
+}
+
+#logo_right{
+	height: 130px;
+    width: 725px;	
+	float: right;
+}
+
+.date{
+	width: 130px;
+	height: 15px;
+	color: #DDD;
+	font-size: 12px;	
+	padding: 7px;
+	float: left;
+}
+
+.reg_box{
+	width: 110px;
+	height: 15px;
+	padding: 7px;
+	float: right;	
+	font-size: 12px;
+	color: #DDD;
+}
+
+.reg_box a{
+	color: #DDD;
+	text-decoration: none;
+	border-bottom: 1px solid #DDD;
+}
+
+.reg_box a:hover{
+	color: #FFF;
+	border: none;
+}
+
+
+
+
+
+
+
+/* NAV ------------------------------------------------------------*/
+nav{
+	height: 40px;
+	background: none;
+	border-bottom: 1px solid #2C2C2C;
+	border-top: 1px solid #2C2C2C;
+
+}
+
+nav ul{
+	line-height: 40px;
+}
+
+nav ul li{
+	list-style: none;
+	float: left;
+	text-transform: uppercase;
+}
+
+nav ul li a{
+	padding: 0 5px;
+	margin-right: 2px;
+	color: #ddd;
+	background: #3B3B3B;
+	border-bottom: 2px solid #000;
+	display: inline-block;
+
+
+}
+
+nav ul li a:hover{
+	background: #777777;
+	color: #FFFFFF;	
+}
+
+nav ul li a.active{
+	background: url(../images/nav_link_hover.jpg);
+	border-bottom: 1px solid #000;
+	padding-bottom: 10px;
+	border-top: 1px solid #CCC;
+
+}
+
+
+
+
+
+
+nav ul li a:focus,nav ul li a:active{
+	background: url(../images/nav_link_hover.jpg);
+	border-bottom: 1px solid #000;
+	padding-bottom: 10px;
+	border-top: 1px solid #CCC;		
+}
+
+.home_link{
+	width: 40px;
+	height: 40px;
+	background: url(../images/home_link.jpg) no-repeat;
+}
+
+
+.site_search{
+	width: 348px;
+    height: 33px;
+	margin-left: 647px;
+	background: url(../images/header.png); 
+	
+}
+
+.site_search input{
+	width: 350px !important;
+    height: 36px;
+    padding: 0 25px 0 30px;
+    border-color: transparent !important;
+    background-color: none !important;
+    border: 0 !important;
+	background: url(../images/bg_search.png) no-repeat;
+	margin-top: 2px;
+	color: #DDD;
+	font-size: 12px;
+}
+
+
+
+/* MAIN ------------------------------------------------------------*/
+#content{
+	width: 720px;	
+	float: left;
+	background: url(../images/bg_content.png);
+	margin-top: 5px;
+	padding: 10px;
+	border-bottom: 2px solid #000;
+		
+}
+
+main{	
+	background: url(../images/bg_main.png);
+	padding: 10px;		
+	
+}
+
+
+/* POST -------------------------------------------------------------*/
+.post{	
+	min-height: 20px;
+	border: 1px solid #666;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.post h2{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+img.img_class_post{
+	border: 1px solid #ABA4A4;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 15px;
+
+}
+.block_top_post{
+	width: 230px;
+	height: 20px;
+	margin-bottom: 15px;
+	position: relative;
+	z-index: 1;	
+}
+
+
+
+.post_preview{
+	width: 65px;
+	height: 25px;	
+	padding-top: 3px;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	
+	
+}
+
+.post_preview img{
+	width: 35px;
+    height: 18px;
+    float: left;
+    
+}
+
+.post_preview span{
+	float: right;
+}
+
+.post_comment{
+	width: 65px;
+	height: 25px;
+	padding-top: 3px;
+	position: absolute;
+	top: 0;
+	left: 80px;
+	
+
+
+}
+
+.post_comment a{
+	float: right;
+	margin-right: 10px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+
+.post_comment a:hover{
+	border: none;
+	color: #222;
+}
+
+.post_comment img{
+	width: 35px;
+    height: 20px;
+} 
+
+.left_tags{
+	width: 9px;
+    height: 27px;
+    line-height: 25px;
+    display: inline-block;
+    float: left;
+    background: url(../images/tags_left.png) no-repeat;
+}
+
+.midle_tags{
+	height: 25px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 0px 12px 0px 14px !important;
+    float: left;
+    background: url(../images/tags_middle.png) repeat-x; 
+}
+
+.right_tags{
+	width: 11px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    float: left;
+    background: url(../images/midle_right.png) repeat-x;
+
+}
+
+
+.tags{
+	margin-top: 20px;
+	width: 520px;
+	height: 100%;
+}
+.tag{	
+    margin-bottom: 2px;
+    display: inline-block;
+    color: #808080;	
+    font-size: 12px;
+}
+
+
+
+
+/* ASIDE ------------------------------------------------------------*/
+aside{
+	width: 239px;	
+	float: right;
+	background: url(../images/bg_content.png);
+	margin-top: 5px;
+	padding: 10px;
+	border-left: 1px inset #DDD;
+	min-height: 500px;
+	
+	
+	
+	
+}
+
+.widget_aside{
+	width: 100%;
+	min-height: 50px;
+	background: url(../images/bg_main.png);
+}
+
+/* FOOTER ------------------------------------------------------------*/
+footer{
+	height: 150px;
+	
+}
+
+#footer_top{
+	height: 100px;
+	background: url(../images/header.png);
+	border-top: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	
+	
+
+}
+
+#footer_bottom{
+	height: 50px;
+	background: url(../images/2.png);
+	border-top: 1px solid #000000;
+	
+	
+}
+
+
+
+
+

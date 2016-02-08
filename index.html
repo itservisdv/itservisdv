@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>codingnet.ru</title>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Сергей Иванов">
+	<meta name="copyright" lang="ru" content="CODINGNET.RU | 2014-2015" />
+	<meta name ="description" content ="Сайт посвещён разработке интернет-сайтов, их модернизации и продвижении">
+	<meta name ="keywords" content ="Разработка сайта, модернизация сайта, продвижение сайта">
+	<meta name="robots" content="index,follow" />	
+	<!-- FONTS-->	
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<!-- CSS-->			
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />	
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/equalHeights.js"></script>	
+	<script>
+		$(window).resize(function() {
+			setEqualHeight();
+		});		
+	</script>
+</head>
+<body>
+	<div id="wrapper">	
+		<header>
+		<div id="header_top">
+			<div class="date">Воскресенье&nbsp;&nbsp;25.01.2016</div>
+			<div class="reg_box">
+				<a href="#">Регистрация</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Войти</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+			<div id="header_box">
+				<div id="logo">
+					<a href="index.html"></a>
+				</div>
+				<div id="logo_right"></div>	
+			</div>
+			<div class="clear"></div>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="home_link"></a></li>
+					<li><a href="article.html">Разработка сайта</a></li>
+					<li><a href="#" lass="active">Софт</a></li>
+					<li><a href="#">Учебники</a></li>
+					<li><a href="#">СКАЧАТь</a></li>
+					<li><a href="#">ПУНКТ</a></li>
+					<li><a href="#">ПУНКТ</a></li>
+				</ul>
+				<div class="site_search">
+					<input type="text" value="Найти..." name="site_search">
+				</div>	
+			</nav>
+			<div class="clear"></div>
+		</header>			
+		<div id="content">
+			<main>				
+				<div class="post">
+					<div class="block_top_post">
+						<div class="post_preview">
+							<img src="images/preview.png" alt="">&nbsp;<span>346</span>	
+						</div>
+						<div class="post_comment">
+							<img src="images/comment_post.png" alt="">&nbsp;<a href="#">34</a>	
+						</div>
+						<div class="clear"></div>						
+					</div>
+					<img src="images/post.jpg"  class="img_class_post" alt="">
+					<h2>Как правильно использовать теги div, section и article.</h2>
+					<p>Всем привет!</p>
+					<p>В этой статье мы рассмотрим, как правильно использовать теги div, section и article в HTML5.</p>
+					<p>Помимо всем известного и очень часто используемого тега div, в HTML5 появились новые, семантические теги, которые позволяют более четко разделить контент на вашем сайте и тем самым помочь поисковым роботам в их нелегкой работе. Однако, к сожалению, многие верстальщики еще не научились их использовать правильно, особенно те, которые обозначены в начале статьи. </p>
+					<div class="clear"></div>
+					<div class="tags">
+						<div class="tag">
+							<span class="left_tags"></span>
+							<span class="midle_tags">Разработка сайта</span>
+							<span class="right_tags"></span>	
+						</div>
+						<div class="tag">
+							<span class="left_tags"></span>
+							<span class="midle_tags">PHP</span>
+							<span class="right_tags"></span>	
+						</div>
+						<div class="tag">
+							<span class="left_tags"></span>
+							<span class="midle_tags">Фреймворки</span>
+							<span class="right_tags"></span>	
+						</div>	
+						<div class="tag">
+							<span class="left_tags"></span>
+							<span class="midle_tags">CMS</span>
+							<span class="right_tags"></span>	
+						</div>					
+					</div>
+				</div>	
+				<div class="post">
+					<h2>Как правильно использовать теги div, section и article.</h2>
+					<p>Всем привет! В этой статье мы рассмотрим, как правильно использовать теги div, section и article в HTML5.</p>
+					<p>Помимо всем известного и очень часто используемого тега div, в HTML5 появились новые, семантические теги, которые позволяют более четко разделить контент на вашем сайте и тем самым помочь поисковым роботам в их нелегкой работе. Однако, к сожалению, многие верстальщики еще не научились их использовать правильно, особенно те, которые обозначены в начале статьи. Надеюсь, что после прочтения данной статьи вопросы по этому поводу, если и не пропадут совсем, то их станет, как минимум, меньше. Итак, приступим.</p>
+					<h3>Div</h3>
+					<p>Если вы откроете сайт W3C, то можете найти там рекомендацию, смысл которой заключается в том, что использовать данный тег нужно для семантически несвязанного между собой контента. Очень часто div используют для того, чтобы сгруппировать какой-нибудь контент, который затем нужно спозиционировать или как-то оформить с помощью css.</p>
+					<h3>Section</h3>
+					<p>Данный элемент используется, наоборот, для семантически связанного между собой контента. Содержимое такого тега должно обладать общей темой. К примеру, новости на новостном сайте:</p>
+				</div>			
+				
+			</main>	
+		</div>	
+			<aside>
+				<div class="widget_aside">
+					<h2>Заголовок (h2)</h2>
+					<p><a href="index.html">Главная</a></p>
+					<p><a href="article.html">Разработка сайтов</a></p>
+				</div>
+			</aside>
+		
+		<div class="clear"></div>
+		<footer>
+			<div id="footer_top"></div>
+			<div id="footer_bottom"></div>
+		</footer>
+	</div>
+
+
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+
+
+<!--script type="text/javascript" src="js/jquery-1.11.3.min.js"></script-->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->	
+</body>
+</html>
